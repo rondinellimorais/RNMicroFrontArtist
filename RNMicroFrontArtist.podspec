@@ -9,7 +9,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/rondinellimorais/RNMicroFrontArtist", :branch => "master" }
   
   s.source_files = "*.swift"
-  s.resources = ['*.jsbundle']
+
+  s.resource_bundles = {
+    'Bundle' => ['RNMicroFrontArtist.jsbundle']
+  }
 
   s.dependency "React"
 

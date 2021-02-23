@@ -26,10 +26,12 @@ class ArtistsViewController: UIViewController {
     
     
     // Producao
-    let jsCodeLocation = URL(string: "RNMicroFrontArtist.jsbundle")
+    let bundle = Bundle(for: ArtistsViewController.self)
+    
+    let strPath = bundle.path(forResource: "RNMicroFrontArtist", ofType: "jsbundle")!
     
     let rootView = RCTRootView(
-      bundleURL: jsCodeLocation!,
+      bundleURL: URL(string: strPath)!,
       moduleName: "RNMicroFrontArtist",
       initialProperties: nil
     )
