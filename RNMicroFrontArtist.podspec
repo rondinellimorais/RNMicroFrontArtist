@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/rondinellimorais/RNMicroFrontArtist", :branch => "master" }
   
-  s.source_files = "*.swift"
+  s.source_files = '**/*.{h,m,swift}'
 
   s.resource_bundles = {
     'Bundle' => ['RNMicroFrontArtist.jsbundle']

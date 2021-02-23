@@ -8,9 +8,9 @@
 import UIKit
 import React
 
-class ArtistsViewController: UIViewController {
+open class ArtistsViewController: UIViewController {
   
-  override func viewWillAppear(_ animated: Bool) {
+  open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(true, animated: false)
     
