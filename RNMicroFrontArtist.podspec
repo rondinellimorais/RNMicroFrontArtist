@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Rondinelli Morais" => "rondinellimorais@gmail.com" }
   s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/rondinellimorais/RNMicroFrontArtist", :branch => "objC" }
+  s.source       = { :git => "https://github.com/rondinellimorais/RNMicroFrontArtist", :branch => "master" }
   
   s.source_files = '**/*.{h,m,swift}'
 
