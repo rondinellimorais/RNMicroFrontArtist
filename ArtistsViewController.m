@@ -33,9 +33,10 @@
   
   //  PROD
   NSBundle * bundle = [NSBundle bundleForClass:ArtistsViewController.class];
-  NSString * srtPath = [bundle pathForResource: @"Bundle.bundle/RNMicroFrontArtist" ofType: @"jsbundle"];
+
+  NSURL *jsCodeLocation = [bundle URLForResource:@"Bundle.bundle/RNMicroFrontArtist" withExtension:@"jsbundle"];
   
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:[NSURL URLWithString:srtPath]
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"RNMicroFrontArtist"
                                                initialProperties:nil
                                                    launchOptions:nil];
