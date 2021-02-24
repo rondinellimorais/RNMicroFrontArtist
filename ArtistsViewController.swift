@@ -13,6 +13,10 @@ open class ArtistsViewController: UIViewController {
   open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(true, animated: false)
+  }
+  
+  open override func viewDidLoad() {
+    super.viewDidLoad()
     
 //    let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
 //
